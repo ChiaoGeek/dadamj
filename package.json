@@ -1,0 +1,19 @@
+{
+  "name": "dadamj",
+  "version": "1.0.1",
+  "description": "The backend admin system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChiaoGeek/dadamj.git"
+  },
+  "author": "chiao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ChiaoGeek/dadamj/issues"
+  },
+  "homepage": "https://github.com/ChiaoGeek/dadamj#readme"
+}
