@@ -1,16 +1,16 @@
 {
-  "name": "Dadamej",
+  "name": "vue-vue-router-webpack",
   "version": "1.1.0",
-  "description": "Dadamej backen admin system",
+  "description": "A base vue project with webpack",
   "main": "index.js",
   "scripts": {
-    "init": "webpack --progress --config webpack.config.js",
-    "dev": "webpack-dev-server --inline --hot --compress --history-api-fallback --config webpack.config.js",
-    "build": "webpack --progress --hide-modules --config webpack.config.js"
+    "init": "webpack --progress --config webpack.dev.config.js",
+    "dev": "webpack-dev-server --inline --hot --compress --history-api-fallback --config webpack.dev.config.js",
+    "build": "webpack --progress --hide-modules --config webpack.prod.config.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Chiao/vue-vueRouter-webpack.git"
+    "url": "git+https://github.com/icarusion/vue-vueRouter-webpack.git"
   },
   "author": "Aresn",
   "license": "MIT",
@@ -43,9 +43,11 @@
     "vue-html-loader": "^1.2.0",
     "vue-loader": "^7.2.0",
     "vue-style-loader": "^1.0.0",
-    "webpack": "^1.13.1",
-    "json-loader": "^0.5.4"
+    "webpack": "^1.13.1"
 
   },
-  "homepage": "https://blog.chiao.me"
+  "bugs": {
+    "url": "https://github.com/icarusion/vue-vueRouter-webpack/issues"
+  },
+  "homepage": "https://github.com/icarusion/vue-vueRouter-webpack#readme"
 }

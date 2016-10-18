@@ -1,28 +1,21 @@
 /**
- * Created by chiao on 10/18/2016.
+ * Created by aresn on 16/7/5.
  */
+
 var path = require('path');
 var webpack = require('webpack');
-//用来生成入口HTML文件并把输出的静态文件夹在进来
-var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     // 入口
     entry: {
-        main: './src/index.js',
+        main: './src/main',
         vendors: ['vue', 'vue-router', 'vue-resource']
     },
     // 输出
     output: {
-        path: path.join(__dirname, './dist'),
-        //资源路径根据需要可以更改CDN
-        publicPath: './dist/',
-        //带hash值的入口js名称
-        filename: '[name].js',
-        //带hash的路由文件
-        chunkFilename: '[name].chunk.js'
-
-    },// 加载器
+        path: path.join(__dirname, './dist')
+    },
+    // 加载器
     module: {
         loaders: [
             { test: /\.vue$/, loader: 'vue' },
@@ -48,10 +41,6 @@ module.exports = {
         }
     },
     plugins: [
-      new HtmlWebpackPlugin({
-        filename: '../index.html',
-        template: './src/template/index.ejs',
-        inject: true
-      })
+
     ]
 };
