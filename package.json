@@ -4,6 +4,7 @@
   "description": "Dadamej backen admin system",
   "main": "index.js",
   "scripts": {
+    "init": "webpack --progress --config webpack.config.js",
     "dev": "webpack-dev-server --inline --hot --compress --history-api-fallback --config webpack.config.js",
     "build": "webpack --progress --hide-modules --config webpack.config.js"
   },
