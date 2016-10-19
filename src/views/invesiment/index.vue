@@ -4,19 +4,19 @@
          <left-down></left-down>
       </left> -->
    <!-- </container> -->
-   <a-container></a-container>
+   <container><left></left></container>
 
 </template>
 
 <script>
-import container from "../components/container/container.vue";
-// import left from "../components/left/left.vue";
+import container from "../../components/container/container.vue";
+import left from "../../components/left/left.vue";
 // import leftDown from "../components/left-down/left-down.vue";
-
+console.log(container);
 export default {
   components: {
-    "a-container":container
-    // left,
+    container,
+    left,
     // leftDown,
 
 
@@ -26,7 +26,9 @@ export default {
   },
   computed: {},
   mounted () {},
-  methods: {},
+  methods: {
+
+  },
   components: {}
 }
 </script>

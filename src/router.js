@@ -6,6 +6,12 @@ const routers = {
         component (resolve) {
             require(['./views/index.vue'], resolve);
         }
+    },
+    '/invesiment/index': {
+        component (resolve) {
+            require(['./views/invesiment/index.vue'], resolve);
+        }
     }
+
 };
 export default routers;
