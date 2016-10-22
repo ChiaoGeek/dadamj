@@ -3,19 +3,19 @@
           <div id="blank-ul"></div>
           <ul id="left-down-ul">
             <li class="ldu-li">
-              <a href="#" class="ldul-a">店铺管理</a>
+              <a href="#" class="ldul-a" :class="{active: activeName == 'storeManage'}" @click="changStyle('storeManage', $event)">店铺管理</a>
             </li>
             <li class="ldu-li">
-              <a href="#" class="ldul-a">建材城</a>
+              <a href="#" class="ldul-a" :class="{active: activeName == 'buildingMaterials'}" @click="changStyle('buildingMaterials', $event)">建材城</a>
             </li>
             <li class="ldu-li">
-              <a href="#" class="ldul-a">品牌</a>
+              <a href="#" class="ldul-a" :class="{active: activeName == 'brand'}" @click="changStyle('brand', $event)">品牌</a>
             </li>
             <li class="ldu-li">
-              <a href="#" class="ldul-a">代理商</a>
+              <a href="#" class="ldul-a" :class="{active: activeName == 'agent'}" @click="changStyle('agent', $event)">代理商</a>
             </li>
             <li class="ldu-li">
-              <a href="#" class="ldul-a">订单管理</a>
+              <a href="#" class="ldul-a" :class="{active: activeName == 'orderManage'}" @click="changStyle('orderManage', $event)">订单管理</a>
             </li>
           </ul>
         </div>
@@ -25,12 +25,20 @@
 export default {
   name: 'left',
   data () {
-    return {}
+    return {
+       activeName: 'orderManage'
+      }
   },
   computed: {},
   mounted () {},
-  methods: {},
-  components: {}
+  methods: {
+    changStyle: function(sortment, event){
+       this.activeName = sortment;
+       //给目前的实例注册一个事件
+       this.$emit('onChangeTemplate', sortment);
+
+    }
+  }
 }
 </script>
 
@@ -67,6 +75,14 @@ export default {
   font-size: 14px;
 }
 .ldul-a:hover{
+  display: block;
+  background-color: rgb(98, 144, 192);
+  border-radius: 12.5px;	/* relative value */
+  -moz-border-radius: 12.5px;
+  -webkit-border-radius: 12.5px;
+  color: #fff;
+}
+.active{
   display: block;
   background-color: rgb(98, 144, 192);
   border-radius: 12.5px;	/* relative value */

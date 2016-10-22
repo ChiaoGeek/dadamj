@@ -1,25 +1,21 @@
 <template lang="html">
-  <div class="container">
-    <slot></slot>
+  <div class="">
+    代理商
   </div>
 </template>
 
 <script>
 export default {
-  name: "container",
+  name:'agent',
   data () {
     return {}
   },
   computed: {},
   mounted () {},
-  methods: {}
+  methods: {},
+  components: {}
 }
 </script>
 
 <style lang="css">
-.container{
-  width: 1000px;
-  height:100%;
-  margin: auto;
-}
 </style>

@@ -11,7 +11,6 @@
           <div id="logout">
             <img src="./img/power.png" alt="" />
           </div>
-
   </div>
 </template>
 
@@ -22,8 +21,7 @@ export default {
   },
   computed: {},
   mounted () {},
-  methods: {},
-  components: {}
+  methods: {}
 }
 </script>
 

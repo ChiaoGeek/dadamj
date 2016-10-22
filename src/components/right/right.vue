@@ -1,12 +1,11 @@
 <template lang="html">
-  <div class="container">
+   <div id="right">
     <slot></slot>
-  </div>
+   </div>
 </template>
 
 <script>
 export default {
-  name: "container",
   data () {
     return {}
   },
@@ -16,10 +15,11 @@ export default {
 }
 </script>
 
-<style lang="css">
-.container{
-  width: 1000px;
-  height:100%;
-  margin: auto;
+<style scoped lang="css">
+#right{
+  width: 850px;
+  height: 100%;
+  float: right;
+  background-color: rgb(248, 241, 237);
 }
 </style>

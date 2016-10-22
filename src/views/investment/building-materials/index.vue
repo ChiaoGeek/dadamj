@@ -1,25 +1,21 @@
 <template lang="html">
-  <div class="container">
-    <slot></slot>
+  <div class="">
+    建材城
   </div>
 </template>
 
 <script>
 export default {
-  name: "container",
+  name:'buildingMaterials',
   data () {
     return {}
   },
   computed: {},
   mounted () {},
-  methods: {}
+  methods: {},
+  components: {}
 }
 </script>
 
 <style lang="css">
-.container{
-  width: 1000px;
-  height:100%;
-  margin: auto;
-}
 </style>
